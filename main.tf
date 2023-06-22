@@ -8,7 +8,7 @@ resource "azurerm_storage_account" "storage_account" {
     
     network_rules {
         default_action             = "Deny"
-        ip_rules                   = ["100.0.0.1"]
+        ip_rules                   = ["100.0.0.1","100.0.0.2"]
     }
 }
 resource "azurerm_storage_container" "storage_container" {
